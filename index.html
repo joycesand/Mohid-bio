@@ -14,12 +14,16 @@
     <header>
         <nav>
             <h1>Mohid Ssali</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
+         
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+    </ul>
     </header>
 
     <section class="hero">
@@ -58,7 +62,11 @@
     <footer>
         <p>© 2026 Mohid Ssali. All rights reserved.</p>
     </footer>
-
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
 </body>
 
 </html>
